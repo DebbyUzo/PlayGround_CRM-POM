@@ -12,9 +12,9 @@ class AddCustomerActionLocators:
     LAST_NAME = (By.ID, "LastName")
     CITY = (By.ID, "City")
     STATE = (By.ID,"StateOrRegion")
-    GENDER = (By.CSS_SELECTOR, "#loginform > div > div > div > div > form > div:nth-child(6)")
-    ADD_TO_PROMOTIONAL_LIST = (By.CSS_SELECTOR, "#loginform > div > div > div > div > form > div:nth-child(7)")
-    SUBMIT = (By.CSS_SELECTOR, "#loginform > div > div > div > div > form > button")
-    SIGN_OUT = (By.CSS_SELECTOR, "body > nav > ul > li > a")
+    GENDER = (By.CSS_SELECTOR, 'input[type="radio"][name="gender"][value="female"]')
+    ADD_TO_PROMOTIONAL_LIST = (By.CSS_SELECTOR, "input[name='promos-name']")
+    SUBMIT = (By.CSS_SELECTOR, "button.btn.btn-primary")
+    SIGN_OUT = (By.CSS_SELECTOR, 'a.nav-link')
 
 
