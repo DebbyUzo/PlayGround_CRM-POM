@@ -45,3 +45,4 @@ def test_customer_form_page(login):
 def test_sign_out_page(login):
     sign_out = SignOutActionPage(login.driver)
     sign_out.click_sign_out()
+
