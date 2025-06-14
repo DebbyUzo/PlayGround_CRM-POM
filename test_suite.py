@@ -12,7 +12,7 @@ def driver_setup():
     driver = webdriver.Chrome(options=chrome_options)
     driver.implicitly_wait(20)                     # Wait implicitly up to 20s
     driver.maximize_window()                       # Maximize window (has no effect in headless, but harmless)
-    yield
+    yield driver
 
 @pytest.fixture(scope="session")
 def login(driver_setup):
