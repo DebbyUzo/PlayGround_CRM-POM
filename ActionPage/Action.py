@@ -71,7 +71,7 @@ class CustomerFormActionPage:
         element = WebDriverWait(self.driver, 20).until(EC.presence_of_element_located(CustomerFormLocators.GENDER))
 
         # Scroll the element into view
-        self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", element)
+        # self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", element)
 
         element.click()
         time.sleep(Config.WAIT_TIME)
@@ -80,7 +80,7 @@ class CustomerFormActionPage:
         element = WebDriverWait(self.driver, 20).until(EC.presence_of_element_located(CustomerFormLocators.ADD_TO_PROMOTIONAL_LIST))
 
         # Scroll the element into view
-        self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", element)
+        # self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", element)
 
         element.click()
         time.sleep(Config.WAIT_TIME)
