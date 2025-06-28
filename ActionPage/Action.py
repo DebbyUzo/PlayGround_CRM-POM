@@ -69,19 +69,11 @@ class CustomerFormActionPage:
 
     def tick_gender(self):
         element = WebDriverWait(self.driver, 20).until(EC.presence_of_element_located(CustomerFormLocators.GENDER))
-
-        # Scroll the element into view
-        # self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", element)
-
         element.click()
         time.sleep(Config.WAIT_TIME)
 
     def tick_add_to_promotional_list(self):
         element = WebDriverWait(self.driver, 20).until(EC.presence_of_element_located(CustomerFormLocators.ADD_TO_PROMOTIONAL_LIST))
-
-        # Scroll the element into view
-        # self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", element)
-
         element.click()
         time.sleep(Config.WAIT_TIME)
 
