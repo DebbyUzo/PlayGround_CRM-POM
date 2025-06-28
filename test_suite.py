@@ -34,7 +34,7 @@ def test_customer_form_page(login):
     customer_form = CustomerFormActionPage(login.driver)
     customer_form.enter_email_address(Config.EMAIL_ADDRESS)
     customer_form.enter_firstname(Config.FIRST_NAME)
-    # customer_form.enter_lastname(Config.LAST_NAME)
+    customer_form.enter_lastname(Config.LAST_NAME)
     # customer_form.enter_city(Config.CITY)
     # customer_form.enter_state(Config.STATE)
     # customer_form.click_gender()
