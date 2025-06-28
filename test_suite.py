@@ -37,11 +37,11 @@ def test_customer_form_page(login):
     customer_form.enter_lastname(Config.LAST_NAME)
     customer_form.enter_city(Config.CITY)
     customer_form.enter_state(Config.STATE)
-    customer_form.click_gender()
+    customer_form.tick_gender()
     # customer_form.tick_add_to_promotional_list()
     # customer_form.click_submit()
 
-  # Test: Sign out
+  # Test: Sign_out_page
  # def test_sign_out_page(login):
     # sign_out = SignOutActionPage(login.driver)
     # sign_out.click_sign_out()

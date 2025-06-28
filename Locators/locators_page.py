@@ -14,7 +14,7 @@ class CustomerFormLocators:
       LAST_NAME = (By.ID, "LastName")
       CITY = (By.ID, "City")
       STATE = (By.ID,"StateOrRegion")
-      GENDER = (By.CSS_SELECTOR, 'input[type="radio"][name="gender"][value="female"]')
+      GENDER = (By.XPATH, '/html/body/section/div/div/div/div/form/div[6]/input[2]')
       ADD_TO_PROMOTIONAL_LIST = (By.CSS_SELECTOR, "input[name='promos-name']")
       SUBMIT = (By.CSS_SELECTOR, "button.btn.btn-primary")
 

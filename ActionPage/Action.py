@@ -67,7 +67,7 @@ class CustomerFormActionPage:
         element.send_keys(state)
         time.sleep(Config.WAIT_TIME)
 
-    def click_gender(self):
+    def tick_gender(self):
         element = WebDriverWait(self.driver, 20).until(EC.presence_of_element_located(CustomerFormLocators.GENDER))
 
         # Scroll the element into view
