@@ -67,12 +67,12 @@ class CustomerFormActionPage:
         element.send_keys(state)
         time.sleep(Config.WAIT_TIME)
 
-    def tick_gender(self):
-        gender_element = WebDriverWait(self.driver, 20).until(EC.element_to_be_clickable(CustomerFormLocators.GENDER) )
-        gender_element.click()
+    def click_gender(self):
+        element = WebDriverWait(self.driver, 20).until(EC.element_to_be_clickable(CustomerFormLocators.GENDER) )
+        element.click()
         time.sleep(Config.WAIT_TIME)
 
-    def tick_add_to_promotional_list(self):
+    def click_add_to_promotional_list(self):
         element = WebDriverWait(self.driver, 20).until(EC.presence_of_element_located(CustomerFormLocators.ADD_TO_PROMOTIONAL_LIST))
         element.click()
         time.sleep(Config.WAIT_TIME)

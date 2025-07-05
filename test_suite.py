@@ -7,8 +7,8 @@ from Config.configuration import Config
 @pytest.fixture(scope="session")
 def driver_setup():
     chrome_options = Options()
-    chrome_options.add_argument("--headless")      # Run in headless mode
-    chrome_options.add_argument("--disable-gpu")   # Prevent GPU errors in headless mode
+    # chrome_options.add_argument("--headless")      # Run in headless mode
+   # chrome_options.add_argument("--disable-gpu")   # Prevent GPU errors in headless mode
     driver = webdriver.Chrome(options=chrome_options)
     driver.implicitly_wait(20)                     # Wait implicitly up to 20s
     driver.maximize_window()                       # Maximize window (has no effect in headless, but harmless)
@@ -37,8 +37,8 @@ def test_customer_form_page(login):
     customer_form.enter_lastname(Config.LAST_NAME)
     customer_form.enter_city(Config.CITY)
     customer_form.enter_state(Config.STATE)
-    customer_form.tick_gender()
-    customer_form.tick_add_to_promotional_list()
+    customer_form.click_gender()
+    customer_form.click_add_to_promotional_list()
     customer_form.click_submit()
 
 def test_sign_out_page(login):
