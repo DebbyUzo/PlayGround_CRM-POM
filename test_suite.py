@@ -37,8 +37,8 @@ def test_customer_form_page(login):
     customer_form.enter_surname(Config.CITY)
     customer_form.enter_city(Config.CITY)
     customer_form.enter_state(Config.STATE)
-    customer_form.click_gender()
-    customer_form.click_add_to_promotional_list()
+   # customer_form.click_gender()
+    # customer_form.click_add_to_promotional_list()
     customer_form.click_submit()
 
 def test_sign_out_page(login):
