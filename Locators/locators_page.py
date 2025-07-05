@@ -15,7 +15,7 @@ class CustomerFormLocators:
       CITY = (By.ID, "City")
       STATE = (By.ID,"StateOrRegion")
       GENDER = (By.NAME, "gender")
-      ADD_TO_PROMOTIONAL_LIST = (By.CSS_SELECTOR, "input[name='promos-name']")
+      ADD_TO_PROMOTIONAL_LIST = (By.NAME, "promos-name")
       SUBMIT = (By.CSS_SELECTOR, "button.btn.btn-primary")
 
 class SignOutLocators:
