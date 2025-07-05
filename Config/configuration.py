@@ -4,7 +4,7 @@ class Config:
       PASSWORD = "Debbie123"
       EMAIL_ADDRESS = "debbieuzo@gmail.com"
       FIRST_NAME = "Debbie"
-      LAST_NAME = "Ego"
+      SUR_NAME = "Ego"
       CITY = "Lagos"
       STATE = "Maryland"
       WAIT_TIME = 5

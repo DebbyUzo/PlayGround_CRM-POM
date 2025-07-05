@@ -52,8 +52,8 @@ class CustomerFormActionPage:
         element.send_keys(first_name)
         time.sleep(Config.WAIT_TIME)
 
-    def enter_lastname(self, last_name):
-        element = WebDriverWait(self.driver, 20).until(EC.presence_of_element_located(CustomerFormLocators.LAST_NAME))
+    def enter_surname(self, last_name):
+        element = WebDriverWait(self.driver, 20).until(EC.presence_of_element_located(CustomerFormLocators.SUR_NAME))
         element.send_keys(last_name)
         time.sleep(Config.WAIT_TIME)
 

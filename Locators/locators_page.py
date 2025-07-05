@@ -11,7 +11,7 @@ class NewCustomerLocators:
 class CustomerFormLocators:
       EMAIL_ADDRESS = (By.ID, "EmailAddress")
       FIRST_NAME = (By.ID, "FirstName")
-      LAST_NAME = (By.ID, "LastName")
+      SUR_NAME = (By.ID, "LastName")
       CITY = (By.ID, "City")
       STATE = (By.ID,"StateOrRegion")
       GENDER = (By.NAME, "gender")
