@@ -1,7 +1,7 @@
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-from ActionPage.Action import Action_Page, NewCustomerActionPage, CustomerFormActionPage, SignOutActionPage
+from ActionPage.Action import Action_Page, NewCustomerActionPage, CustomerFormActionPage, SignOutPage
 from Config.configuration import Config
 
 @pytest.fixture(scope="session")
@@ -37,11 +37,11 @@ def test_customer_form_page(login):
     customer_form.enter_surname(Config.CITY)
     customer_form.enter_city(Config.CITY)
     customer_form.enter_state(Config.STATE)
-    customer_form.gender()
+    customer_form.click_gender()
     #customer_form.click_add_to_promotional_list()
-    customer_form.submit()
+    customer_form.click_submit()
 
 def test_sign_out_page(login):
-    sign_out = SignOutActionPage(login.driver)
-    sign_out.sign_out()
+    sign_out = SignOutPage(login.driver)
+    sign_out.click_sign_out()
 

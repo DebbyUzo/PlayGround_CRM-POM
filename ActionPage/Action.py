@@ -67,7 +67,7 @@ class CustomerFormActionPage:
         element.send_keys(state)
         time.sleep(Config.WAIT_TIME)
 
-    def gender(self):
+    def click_gender(self):
         element = WebDriverWait(self.driver, 20).until(EC.element_to_be_clickable(CustomerFormLocators.GENDER))
         element.click()
         time.sleep(Config.WAIT_TIME)
@@ -77,17 +77,17 @@ class CustomerFormActionPage:
         element.click()
         time.sleep(Config.WAIT_TIME)
 
-    def submit(self):
+    def click_submit(self):
         element = WebDriverWait(self.driver, 20).until(EC.presence_of_element_located(CustomerFormLocators.SUBMIT))
         element.click()
         time.sleep(Config.WAIT_TIME)
 
 
-class SignOutActionPage:
+class SignOutPage:
     def __init__(self, driver):
         self.driver = driver
 
-    def sign_out(self):
+    def click_sign_out(self):
         element = WebDriverWait(self.driver, 20).until(EC.presence_of_element_located(SignOutLocators.SIGN_OUT))
         element.click()
         time.sleep(Config.WAIT_TIME)
