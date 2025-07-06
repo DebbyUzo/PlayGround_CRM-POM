@@ -14,7 +14,7 @@ class CustomerFormLocators:
       SUR_NAME = (By.ID, "LastName")
       CITY = (By.ID, "City")
       STATE = (By.ID,"StateOrRegion")
-      GENDER = (By.NAME, "gender")
+      CLICK_GENDER = (By.NAME, "gender")
       ADD_TO_PROMOTIONAL_LIST = (By.NAME, "promos-name")
       SUBMIT = (By.XPATH, "/html/body/section/div/div/div/div/form/button")
 

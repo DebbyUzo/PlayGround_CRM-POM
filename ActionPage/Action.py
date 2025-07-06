@@ -68,7 +68,7 @@ class CustomerFormActionPage:
         time.sleep(Config.WAIT_TIME)
 
     def click_gender(self):
-        element = WebDriverWait(self.driver, 20).until(EC.element_to_be_clickable(CustomerFormLocators.GENDER) )
+        element = WebDriverWait(self.driver, 20).until(EC.element_to_be_clickable(CustomerFormLocators.CLICK_GENDER))
         element.click()
         time.sleep(Config.WAIT_TIME)
 
