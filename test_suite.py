@@ -21,15 +21,18 @@ def login(driver_setup):
     login_page.login_url(Config.BASE_URL)
     return login_page
 
+# Test Login Successfully
 def test_login_page_on_automation_customer_service_website(login):
     login.enter_username(Config.USERNAME)
     login.enter_password(Config.PASSWORD)
     login.click_submit_button()
 
+# Test New customer Page
 def test_new_customer(login):
     new_customer = NewCustomerActionPage(login.driver)
     new_customer.click_new_customer()
 
+# Test Customer Form Page
 def test_customer_form_page(login):
     customer_form = CustomerFormActionPage(login.driver)
     customer_form.enter_email_address(Config.EMAIL_ADDRESS)
@@ -41,6 +44,7 @@ def test_customer_form_page(login):
     #customer_form.click_add_to_promotional_list()
     customer_form.click_submit()
 
+# Test Log out Page
 def test_sign_out_page(login):
     sign_out = SignOutPage(login.driver)
     sign_out.click_sign_out()
